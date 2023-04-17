@@ -11129,13 +11129,13 @@ footer.footer .social-link:hover {
 
 @keyframes slideshow {
   0% {
-    background-image: url('./assets/img/01-About/DERAW-1790.jpg');
+    background-image: url('../assets/img/01-About/DERAW-1790.jpg');
   }
   50% {
-    background-image: url('./assets/img/01-About/DERAW-1863.jpg');
+    background-image: url('../assets/img/01-About/DERAW-1863.jpg');
   }
   100% {
-    background-image: url('./assets/img/01-About/DERAW-1791.jpg');
+    background-image: url('../assets/img/01-About/DERAW-1791.jpg');
   }
 }
 
