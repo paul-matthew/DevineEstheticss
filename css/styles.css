@@ -7664,7 +7664,7 @@ textarea.form-control-lg {
   color:white;
   text-transform: uppercase;
   -webkit-text-stroke: 2px black;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
 }
 
 .mb-2 {
@@ -7689,7 +7689,7 @@ textarea.form-control-lg {
   color:white;
   text-transform: uppercase;
   -webkit-text-stroke: 2px black;
-  font-family:'Calibri';
+  font-family:'Calibri' !important;
 }
 .mb-6 span{
   display:block;
@@ -11021,12 +11021,13 @@ footer.footer .social-link {
   width: 4rem;
   line-height: 4.3rem;
   font-size: 1.5rem;
-  background-color: #7B5741;
+  border: 1px solid grey;
+  background-color: #F5F5DC;
   transition: background-color 0.15s ease-in-out;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
 footer.footer .social-link:hover {
-  background-color: #F5F5DC;
+  background-color: #7B5741;
   text-decoration: none;
 }
 
