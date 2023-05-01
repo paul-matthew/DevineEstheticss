@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
 /*!
 * Start Bootstrap - Stylish Portfolio v6.0.6 (https://startbootstrap.com/theme/stylish-portfolio)
 * Copyright 2013-2023 Start Bootstrap
@@ -2862,19 +2864,25 @@ textarea.form-control-lg {
 
 .btn-secondary {
   --bs-btn-color: #000;
-  --bs-btn-bg: #F5F5DC;
-  --bs-btn-border-color: #F5F5DC;
+  --bs-btn-bg: #7B5741;
+  --bs-btn-border-color: #7B5741;
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #FAFAD2;
-  --bs-btn-hover-border-color: #FAFAD2;
+  --bs-btn-hover-bg: #7B5741;
+  --bs-btn-hover-border-color: #7B5741;
   --bs-btn-focus-shadow-rgb: 201, 156, 6;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #FAFAD2;
-  --bs-btn-active-border-color: #FAFAD2;
+  --bs-btn-active-bg: #7B5741;
+  --bs-btn-active-border-color: #7B5741;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #000;
-  --bs-btn-disabled-bg: #F5F5DC;
-  --bs-btn-disabled-border-color: #F5F5DC;
+  --bs-btn-disabled-bg: #7B5741;
+  --bs-btn-disabled-border-color: #7B5741;
+  font-weight:bold;
+  background-color: #7B5741;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+
 }
 
 .btn-success {
@@ -7651,8 +7659,12 @@ textarea.form-control-lg {
 }
 
 .mb-1 {
-  margin-bottom: 0.25rem !important;
-  font-size:60px;
+  margin-bottom: 3.25rem !important;
+  font-size:50px;
+  color:white;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px black;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 .mb-2 {
@@ -7671,12 +7683,24 @@ textarea.form-control-lg {
   margin-bottom: 3rem !important;
 }
 .mb-6 {/*Added*/
-  background-color: rgba(230, 230, 191, 0.7);
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  padding: 20px;
-  margin: 10px;
+  padding: 1px;
+  margin: 1px;
+  font-size: 35px;
+  color:white;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px black;
+  font-family:'Calibri';
 }
+.mb-6 span{
+  display:block;
+  font-size: 25px;
+  color:tan;
+  text-transform: none;
+  -webkit-text-stroke:1px black;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
 .mb-7{
   color:black;
 }
@@ -8051,7 +8075,7 @@ textarea.form-control-lg {
 
 .text-secondary {
   --bs-text-opacity: 1;
-  color: green !important;
+  color: #7B5741 !important;
 }
 
 .text-success {
@@ -10844,6 +10868,8 @@ html {
 .content-section {
   padding-top: 1.5rem;
   padding-bottom: 7.5rem;
+  border-top:2px solid #F5F5DC;
+
 }
 
 .content-section-heading h2, .content-section-heading .h2 {
@@ -10888,7 +10914,7 @@ html {
   height: 100%;
   transition: all 0.4s ease 0s;
   transform: translateX(250px);
-  background: #BFBF8F;
+  background: #F5F5DC;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -10910,8 +10936,8 @@ html {
 
 .sidebar-nav li a:hover {
   text-decoration: none;
-  color: green;
-  background: rgba(255, 255, 255, 0.2);
+  color: #7B5741;
+  background: lightgray;
 }
 
 .sidebar-nav li a:active,
@@ -10930,7 +10956,7 @@ html {
 }
 
 .sidebar-nav > .sidebar-brand a {
-  color: green;
+  color: #7B5741;
   text-decoration: none;
   text-transform: uppercase;
   font-weight:bold;
@@ -10995,12 +11021,12 @@ footer.footer .social-link {
   width: 4rem;
   line-height: 4.3rem;
   font-size: 1.5rem;
-  background-color: #1D809F;
+  background-color: #7B5741;
   transition: background-color 0.15s ease-in-out;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
 footer.footer .social-link:hover {
-  background-color: #155d74;
+  background-color: #F5F5DC;
   text-decoration: none;
 }
 
@@ -11132,16 +11158,44 @@ footer.footer .social-link:hover {
     background-image: url(../assets/img/01-About/DERAW-1790.jpg);
   }
   50% {
-    background-image: url(../assets/img/01-About/DERAW-1863.jpg);
+    background-image: url(../assets/img/01-About/DERAW-9504.jpg);
   }
   100% {
     background-image: url(../assets/img/01-About/DERAW-1791.jpg);
   }
 }
 
-.intro-slideshow h1{
-  background-color: rgba(230, 230, 191, 0.7);
+/*About me text wrap*/
+
+.image-with-text {
+  display: flex;
+  flex-wrap: wrap;
+  padding:10px;
 }
+
+.image-with-text .text-wrapper {
+  flex: 1;
+  margin-left: 20px; /* Adjust the spacing between the image and the text */
+}
+
+@media(max-width:800px){
+  #aboutme{
+    width:100%;
+  }
+}
+
+@media(min-width:801px){
+  #aboutme{
+    width:50%;
+    object-fit: cover;
+  }
+}
+
+
+
+/*.intro-slideshow h1{
+  background-color: rgba(230, 230, 191, 0.7);
+}*/
 
 
 /*SLIDESHOW (FOR SERVICES)*/
@@ -11189,14 +11243,14 @@ footer.footer .social-link:hover {
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
+  color: black;
   font-size: 35px;
   padding: 8px 12px;
   position: absolute;
   bottom: 10%;
   width: 100%;
   text-align: center;
-  background-color:black;
+  background-color:#7B5741;
 }
 
 /* Number text (1/3 etc) */
