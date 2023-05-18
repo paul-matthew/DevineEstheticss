@@ -1,7 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-
-/*!
+@import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');/*!
 * Start Bootstrap - Stylish Portfolio v6.0.6 (https://startbootstrap.com/theme/stylish-portfolio)
 * Copyright 2013-2023 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-stylish-portfolio/blob/master/LICENSE)
@@ -7659,11 +7658,11 @@ textarea.form-control-lg {
 }
 
 .mb-1 {
-  margin-bottom: 3.25rem !important;
+  margin:0;
   font-size:50px;
   color:white;
-  text-transform: uppercase;
-  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;  
+  font-family: 'Rochester', cursive !important;
 }
 
 .mb-2 {
@@ -7682,21 +7681,20 @@ textarea.form-control-lg {
   margin-bottom: 3rem !important;
 }
 .mb-6 {/*Added*/
-  padding: 1px;
-  margin: 1px;
-  font-size: 35px;
+  padding: 0px;
+  margin: 0px;
+  font-size: 20px;
   color:white;
   text-transform: uppercase;
-  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
-  font-family:'Calibri' !important;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;  
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
 }
 .mb-6 span{
   display:block;
   font-size: 25px;
   color:tan;
   text-transform: none;
-  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;  
 }
 
 .mb-7{
@@ -11150,6 +11148,12 @@ footer.footer .social-link:hover {
   animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+}
+
+.header-text{
+  position: absolute;
+  bottom: 10px;
+  left: 0;
 }
 
 @keyframes slideshow {
