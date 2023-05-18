@@ -1,6 +1,8 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');/*!
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/*!
 * Start Bootstrap - Stylish Portfolio v6.0.6 (https://startbootstrap.com/theme/stylish-portfolio)
 * Copyright 2013-2023 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-stylish-portfolio/blob/master/LICENSE)
@@ -7658,11 +7660,11 @@ textarea.form-control-lg {
 }
 
 .mb-1 {
-  margin:0;
-  font-size:50px;
-  color:white;
-  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;  
-  font-family: 'Rochester', cursive !important;
+  margin: 0;
+  font-size: 56px;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  font-family: 'Great Vibes', cursive !important;
 }
 
 .mb-2 {
@@ -7681,13 +7683,13 @@ textarea.form-control-lg {
   margin-bottom: 3rem !important;
 }
 .mb-6 {/*Added*/
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   font-size: 20px;
-  color:white;
+  color: white;
   text-transform: uppercase;
-  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;  
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  font-family: 'Roboto', sans-serif;
 }
 .mb-6 span{
   display:block;
@@ -8121,7 +8123,7 @@ textarea.form-control-lg {
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: #6c757d !important;
+  color: white !important;
 }
 
 .text-black-50 {
@@ -10864,7 +10866,6 @@ html {
 .content-section {
   padding-top: 1.5rem;
   padding-bottom: 7.5rem;
-  border-top:2px solid #F5F5DC;
 
 }
 
@@ -10910,7 +10911,7 @@ html {
   height: 100%;
   transition: all 0.4s ease 0s;
   transform: translateX(250px);
-  background: #F5F5DC;
+  background: #36454F;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -10926,14 +10927,15 @@ html {
 .sidebar-nav li.sidebar-nav-item a {
   display: block;
   text-decoration: none;
-  color: black;
+  color: white;
   padding: 15px;
 }
 
 .sidebar-nav li a:hover {
   text-decoration: none;
-  color: #7B5741;
-  background: lightgray;
+  color: black;
+  background: white;
+  font-weight:bold;
 }
 
 .sidebar-nav li a:active,
@@ -10943,7 +10945,7 @@ html {
 
 .sidebar-nav > .sidebar-brand {
   font-size: 1.2rem;
-  background: rgba(52, 58, 64, 0.1);
+  background: #5E6E7A;
   height: 80px;
   line-height: 50px;
   padding-top: 15px;
@@ -10952,7 +10954,7 @@ html {
 }
 
 .sidebar-nav > .sidebar-brand a {
-  color: #7B5741;
+  color: white;
   text-decoration: none;
   text-transform: uppercase;
   font-weight:bold;
@@ -11007,8 +11009,9 @@ html {
 }
 
 footer.footer {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 1rem;
+  background-color:#5E6E7A;
+  padding-bottom: 1rem;
 }
 footer.footer .social-link {
   display: block;
@@ -11018,12 +11021,12 @@ footer.footer .social-link {
   line-height: 4.3rem;
   font-size: 1.5rem;
   border: 1px solid grey;
-  background-color: #F5F5DC;
+  background-color: #7B5741;
   transition: background-color 0.15s ease-in-out;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
 footer.footer .social-link:hover {
-  background-color: #7B5741;
+  background-color: #F5F5DC;
   text-decoration: none;
 }
 
@@ -11148,12 +11151,34 @@ footer.footer .social-link:hover {
   animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  justify-content: center;
+}
+
+.container-fade {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fade-out {
+  animation: fadeOut 3.5s ease-out forwards;
+  text-align: center;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 .header-text{
   position: absolute;
-  bottom: 10px;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @keyframes slideshow {
