@@ -11176,7 +11176,7 @@ footer.footer .social-link:hover {
 
 .header-text{
   position: absolute;
-  bottom: 0%;
+  bottom: 3%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
