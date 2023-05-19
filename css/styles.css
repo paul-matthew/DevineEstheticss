@@ -7661,7 +7661,7 @@ textarea.form-control-lg {
 
 .mb-1 {
   margin: 0;
-  font-size: 56px;
+  font-size: 36px;
   color: white;
   text-shadow: 2px 2px 2px black;
   font-family: 'Great Vibes', cursive !important;
@@ -7685,7 +7685,7 @@ textarea.form-control-lg {
 .mb-6 {/*Added*/
   padding: 0;
   margin: 0;
-  font-size: 20px;
+  font-size: 15px;
   color: white;
   text-transform: uppercase;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
@@ -11176,7 +11176,7 @@ footer.footer .social-link:hover {
 
 .header-text{
   position: absolute;
-  top: 50%;
+  bottom: 0%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -11315,4 +11315,49 @@ footer.footer .social-link:hover {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+/*ABOUT ME TOGGLE*/
+
+.container-abouttog {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 5vh;
+  background-color: #5E6E7A;
+  padding:5px;
+  z-index: 999;
+}
+
+.aboutme-toggle{
+  color:white;
+}
+
+.container-abouttog .aboutme-toggle:hover {
+  color: black !important;
+  cursor: pointer;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transition: right 0.3s ease-in-out;
+  z-index: 998;
+}
+
+.side-menu.open {
+  right: 0;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }

@@ -111,3 +111,11 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+
+//ABOUT ME TOGGLE
+
+function toggleMenu() {
+    var sideMenu = document.getElementById("sideMenu");
+    sideMenu.classList.toggle("open");
+  }
